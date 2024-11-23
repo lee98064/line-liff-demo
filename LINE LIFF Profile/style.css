@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 15%;
+}
+
+.user-card {
+  display: none;
+  max-width: 500px;
+  padding: 150px 5px;
+  border-radius: 10px;
+}
+
+.login-card {
+  width: 100%;
+}
+
+.login-card .login-btn {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  background-color: #4fb932;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+
+.login-card .login-btn:hover {
+  background-color: #4fb9329d;
+}
+
+.user-avatar {
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.user-avatar img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-info .user-name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-info .user-status {
+  width: 100%;
+  text-align: center;
+}
+
+.logout-btn {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  border: none;
+  background-color: rgb(228, 64, 64);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-weight: 900;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: rgb(228, 64, 64, 0.8);
+}

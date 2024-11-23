@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LINE LIFF 抽獎轉盤</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <button id="start-liff">啟動活動助手</button>
+      <div id="lottery" style="display: none">
+        <div id="wheel-container">
+          <div id="wheel">
+            <div class="segment" style="--angle: 30deg"><span>獎項A</span></div>
+            <div class="segment" style="--angle: 90deg"><span>獎項B</span></div>
+            <div class="segment" style="--angle: 150deg">
+              <span>獎項C</span>
+            </div>
+            <div class="segment" style="--angle: 210deg">
+              <span>獎項D</span>
+            </div>
+            <div class="segment" style="--angle: 270deg">
+              <span>獎項E</span>
+            </div>
+            <div class="segment" style="--angle: 330deg">
+              <span>再接再厲</span>
+            </div>
+          </div>
+          <div id="pointer"></div>
+        </div>
+        <button id="spin-wheel">開始抽獎</button>
+      </div>
+      <div id="result" style="display: none">
+        <h3 id="reward-message"></h3>
+        <button id="send-reward">領取獎勵</button>
+        <button id="share-activity">分享活動</button>
+        <!-- 新增的分享按鈕 -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
